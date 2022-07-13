@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8">
+    <title>Tweeter Search Portal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 5em;
+            padding: 5em;
+            background-color: #1DA1F2;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+    </style>
+		
+    <script>
+        const handleSubmit = () => {
+
+            console.log("Form submitted!")
+            console.log("Value of result (Aka query): " + document.getElementById('query'));
+            console.log("Value of result 2 (Aka query2): " + document.getElementById('query2'));
+
+        }
+    </script>
+</head>
+
+
+<body>
+    <div>
+		<h1 align="center" style="color:white; font-size:70px; text-shadow: 2px 2px #35498B"> Twitter Web Search Engine </h1>
+        <h2 align="center" class="bold"> A Twitter Web Crawler that lets you search for tweets Marvel-related! :) </h2>
+    </div>
+	<br/>
+	<br/>
+	<br/>
+    <div>
+        <form action="#" th:action="@{/home}" th:object="${tweet}" method="post" id="form" onsubmit="handleSubmit()">
+
+            <div align="center" class="form-group">
+                <h4 for="device">Try searching for any tweet by query! </h4> 
+				<input class="input-group" placeholder="Search for anything by query!" id="query" type="text" th:field="*{device}" />
+                <ul>
+                    <li th:each="err : ${#fields.errors('device')}" th:text="${err}" class="error" />
+                </ul>
+
+            <div align="center" class="form-group">
+                <input type="submit" class="btn btn-primary" value="Submit" />
+                <input type="reset" class="btn btn-primary" value="Reset" />
+            </div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div align="center" style="color:white; font-weight:lighter;">
+				<p> Project by: Sanchit Goel, Benson Wan, Raghav Gupta, Rohan Behera, and Ishika Rakesh © 2022 </p>
+			</div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+[
+    {
+        "tag": "doctorstrange",
+        "rule": "(#doctorstrange OR #docstrange OR #DoctorStrange OR #multiverseofmadness OR #MultiverseOfMadness OR doctorstrange OR #stevenstrange OR \"doctor strange\") -is:retweet lang:en"
+    },
+    {
+        "tag": "moonknight",
+        "rule":"(#moonknight OR #MoonKnight OR #stevengrant OR #marcspector OR #StevenGrant OR #MarcSpector OR #JakeLockley OR #khonshu OR #Khonshu OR #arthurharrow OR moonknight OR \"moon knight\") -is:retweet lang:en"
+    },
+    {
+        "tag": "marvel",
+        "rule": "(#marvel OR #mcu OR marvel OR mcu OR #Marvel OR #StanLee) -is:retweet lang:en"
+    },
+    {
+        "tag": "ironman",
+        "rule": "(#ironman OR #tonystark OR tonystark OR ironman OR #ironman1 OR #ironman2 OR #ironman3 OR #loveyou3000 OR loveyou3000 OR \"tony stark\") -is:retweet lang:en"
+    },
+    {
+        "tag": "spiderman",
+        "rule": "(#spiderman OR #SpiderMan OR #NoWayHome OR #FarFromHome OR \"peter parker\" OR #peterparker OR #PeterParker OR \"Spider-Man\" OR \"spider-man\") -is:retweet lang:en"
+    },
+    {
+        "tag": "captainamerica",
+        "rule": "(#captainamerica OR #steverogers OR #CaptainAmerica OR #SteveRogers OR \"Captain America\" OR \"captain america\" OR \"steve rogers\") -is:retweet lang:en"
+    },
+    {
+        "tag": "avengers",
+        "rule": "(#avengers OR #Avengers OR avengers OR #AvengersEndgame OR #Avengers OR #AvengersInfinityWar) -is:retweet lang:en"
+    },
+    {
+        "tag": "wandavision",
+        "rule": "(\"Wanda Maximoff\" OR #Wanda OR #ScarletWitch OR #WandaVision) -is:retweet lang:en"
+    }
+]
